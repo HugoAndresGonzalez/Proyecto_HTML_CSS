@@ -461,3 +461,100 @@ top: 88%;
     text-align: start;
     padding: 10%;
 }
+.Contacto{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color:#ffb4ce;
+    padding: 5%;
+}
+.dibujo-boda{
+    position: relative;
+    grid-column: 1;
+    grid-row: 1/2;
+}
+
+.novios{
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 35vw;
+    z-index: 100;
+}
+  
+.exclamacion{
+    position: absolute;
+    width: 16vw;
+    left: 45%;
+}
+.mano-disco{
+    position: absolute;
+    width: 16vw;
+    left: 68%;
+    top: 3%;
+}
+.copas{
+    position: absolute;
+    width: 16vw;
+    left: 62%;
+    top: 68%;
+    z-index: 200;
+}
+.loop{
+    position: absolute;
+    width: 10vw;
+    left: 63%;
+    top: 52%;
+    z-index: 200;
+}
+.corazon{
+    position: absolute;
+    width: 10vw;
+    left: 18%;
+    top: 35%;
+}
+
+.musica{
+    position: absolute;
+    width: 25vw;
+    left: 18%;
+    top: 2%;
+}
+.anillos{
+    position: absolute;
+    width: 10vw;
+    left: 65%;
+    top: 38%;
+}
+.loop-wide{
+    position: absolute;
+    width: 20vw;
+    left: 30%;
+    top: 60%;
+    z-index: 200;
+}
+.box-icon{
+    position: absolute;
+    width: 11vw;
+    left: 25%;
+    top: 50%;
+}
+.smile{
+    position: absolute;
+    width: 11vw;
+    left: 28%;
+    top: 65%;
+    z-index: 200;
+}
+.stars{
+    position: absolute;
+    width: 8vw;
+    left: 72%;
+    top: 2%;
+}
+
+.consulta-date{
+    grid-column: 1;
+    grid-row: 2/3;
+}
