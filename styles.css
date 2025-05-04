@@ -221,3 +221,27 @@ nav ul{
     width: 16rem;
     height: 16rem;
 }
+/* Estilos seccion de Galeria */
+.galeria{
+    background:linear-gradient(to bottom,#fcffff 70.5%,black 70.5%,black 71%,#ff6541 71%) ;
+    padding-bottom: 7%;
+    padding-top: 5%;
+}
+
+.contenedor-galeria{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: 1fr; 
+overflow-x: auto;
+grid-template-rows: repeat(2,1fr);
+gap: 2%;
+}
+
+
+.contenedor-galeria img{
+    height: 40vh;
+    width: 25vw;
+
+    border: 1px solid black;
+    border-radius: 15%;   
+}
