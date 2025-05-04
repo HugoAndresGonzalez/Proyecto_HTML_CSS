@@ -12,6 +12,10 @@
     font-family: "anybody";
     src: url("fuentes/Anybody-Black.ttf");
 }
+@font-face {
+    font-family: "futurino";
+    src: url("fuentes/futurino-outline-bold.ttf");
+}
 body {
     font-family:"gulfs-display","anybody", sans-serif;
   }
@@ -27,6 +31,7 @@ header{
 
 header a{ 
     display: inline-flex;
+    align-items: center;
     text-decoration: none;
     color: black;
     font-size: 1.5em;
@@ -79,7 +84,7 @@ nav ul{
     display: flex;
   }
 
-/* Estilos seccion de nosotros */
+/* Estilos seccion de Incio */
 
 .inicial{ 
     position: relative;  
@@ -138,8 +143,81 @@ nav ul{
     position: absolute;
     width: 4rem;
     height: 4rem;
-    top: 84%;
+    top: 82%;
     left: 22%;
     z-index: 4;
 }
    
+/* Estilos seccion de nosotros */
+
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff35f;
+}
+
+.contenedor-circles{
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.texto-subtitulo-iconos h1{
+    font-family: "futurino";
+    line-height: 0.8;
+    color: #1d5fcd;
+    font-size:4rem ;
+    padding-left: 12%;
+}
+.texto-subtitulo-iconos p{
+    margin-top: 2%;
+    margin-right: 12%;
+    font-family: sans-serif;
+    padding-left: 12%;
+}
+.texto-subtitulo-iconos span{
+    display:inline-flex;
+    margin-top: 2%; 
+    font-family: "gulfs-display";
+    align-items: center;
+    padding-left: 12%;
+  
+}
+.texto-subtitulo-iconos span img{
+    height:4rem ;
+    width: 4rem;
+}
+
+.con-div{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: 80vh;
+}
+.contenedor-imagen-nosotros{
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    background-color: #ffb4ce;
+    border: 1px solid black;
+}
+.uno{
+    top: 12%;
+    left: 10%;
+    rotate: -10deg;
+}
+.dos{
+    top: 10%;
+    rotate: -10deg;
+    left: 11%;
+}
+.tres{
+    background-color: white;
+    rotate: -10deg;
+    top: 8%;
+    left: 12%;
+}
+.tres img{
+    margin: 5%;
+    width: 16rem;
+    height: 16rem;
+}
