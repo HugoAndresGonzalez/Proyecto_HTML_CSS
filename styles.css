@@ -344,7 +344,7 @@ font-family: "gulfs-display";
     width: 60%;
     height: 5rem;
     border-radius:45px ;
-    box-shadow: 5px 6px 10px rgba(0, 0,0,4);
+    box-shadow: 5px 6px 1px rgba(0, 0,0,4);
 }
 .perilla{
     width: 5rem;
@@ -398,8 +398,7 @@ height: 3.5rem;
     display: none;
 }
 #sesion:checked + label .cir-uno {
-    margin-left: 50%;
-    
+    margin-left: 50%;   
 }
 
 #video:checked + label .cir-dos {
@@ -464,20 +463,20 @@ top: 88%;
 .Contacto{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.75fr 1fr;
     background-color:#ffb4ce;
     padding: 5%;
 }
 .dibujo-boda{
     position: relative;
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 1/2;
 }
 
 .novios{
     position: absolute;
-    top: 18%;
-    left: 50%;
+    top: 12vw;
+    left: 45vw;
     transform: translateX(-50%);
     width: 35vw;
     z-index: 100;
@@ -486,75 +485,171 @@ top: 88%;
 .exclamacion{
     position: absolute;
     width: 16vw;
-    left: 45%;
+    left: 40vw;
 }
 .mano-disco{
     position: absolute;
-    width: 16vw;
-    left: 68%;
-    top: 3%;
+    width: 14vw;
+    left: 58vw;
+    top: 6vw;
 }
 .copas{
     position: absolute;
     width: 16vw;
-    left: 62%;
-    top: 68%;
+    left: 53vw;
+    top: 40vw;
     z-index: 200;
 }
 .loop{
     position: absolute;
-    width: 10vw;
-    left: 63%;
-    top: 52%;
+    width: 6vw;
+    left: 57vw;
+    top: 32vw;
     z-index: 200;
 }
 .corazon{
     position: absolute;
     width: 10vw;
-    left: 18%;
-    top: 35%;
+    left: 18vw;
+    top: 25vw;
 }
 
 .musica{
     position: absolute;
     width: 25vw;
-    left: 18%;
-    top: 2%;
+    left: 17vw;
+    top: 5vw;
 }
 .anillos{
     position: absolute;
     width: 10vw;
-    left: 65%;
-    top: 38%;
+    left: 60vw;
+    top: 25vw;
 }
 .loop-wide{
     position: absolute;
     width: 20vw;
-    left: 30%;
-    top: 60%;
+    left: 27vw;
+    top: 42vw;
     z-index: 200;
 }
 .box-icon{
     position: absolute;
     width: 11vw;
-    left: 25%;
-    top: 50%;
+    left:22vw;
+    top: 35vw;
 }
 .smile{
     position: absolute;
     width: 11vw;
-    left: 28%;
-    top: 65%;
+    left: 28vw;
+    top:44vw;
     z-index: 200;
 }
 .stars{
     position: absolute;
     width: 8vw;
-    left: 72%;
-    top: 2%;
+    left: 63vw;
+    top: 20vw;
 }
 
 .consulta-date{
-    grid-column: 1;
+    grid-column: 1/2;
     grid-row: 2/3;
+}
+
+.consulta-date h1{
+    color:#035dff ;
+    font-size: 3rem;
+}
+.consulta-date p{
+    font-family: "anybody",sans-serif ;
+}
+.calendario{
+    width: 100%;
+    display: inline-flex;
+    margin-top: 10%;
+    justify-content:space-between;
+    padding-bottom:5% ;
+    border-bottom:4px solid #ff6541; ;
+}
+.calendario input{
+    appearance: none;
+    border: none;
+    background: none;
+    width: 40vw;
+    color: #ff6541;
+    font-weight: bold;
+    font-family: "gulfs-display";
+    font-size: 1.3rem;
+    border-radius: 25px;
+    cursor: pointer;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+  }
+.flechitas{
+    display:inline-flex;
+    width: 25vw;
+    justify-content: space-between;
+}
+.contenedor-flecha-uno{
+    display: flex;
+    justify-content: center;
+    border-radius: 100%;
+    width:3rem ;
+    height:3rem ;
+    background-color:#ff6541 ;
+    padding: 2%;
+}
+
+.pie-pagina {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color: white;
+    margin-top: 10%;
+    box-shadow: -5px 5px 1px rgba(0, 0,0,1);
+}
+.informacion{
+    grid-row: 1/2;
+    grid-column: 1/7;
+    font-family: sans-serif;
+    padding: 5%;
+    border: 1px solid black;
+}
+.politicas{
+    grid-row: 2/3;
+    grid-column: 1/4;
+    color: black;
+    padding: 5%;
+    font-family: "anybody";
+    font-size: 0.8rem;
+}
+.pie-pagina  a{
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+
+}
+.pie-pagina  a img{
+    width: 1rem;
+    height: 1rem;
+}
+
+.icon{
+    border: 2px solid black;
+    padding: 12%;
+    border-radius: 100%;
+}
+.fb{
+    background-color:#9ef3f3 ;
+}
+.ig{
+    background-color:#ffb4ce;
+}
+.tg{
+    background-color:#fff460;
 }
