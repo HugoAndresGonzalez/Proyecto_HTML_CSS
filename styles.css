@@ -746,6 +746,113 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     cursor: pointer;
   }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@media (min-width: 768px) {
+    html{
+        max-width:100%;
+    }
+    .menu-secciones, 
+    .menu-seccion {
+      display: none;
+    }
+
+    header{
+        position: relative;
+    }
+    header nav{
+       position:absolute;
+       top: -110px;
+       right:0%;
+       font-size: 0.8rem;
+    }
+    .menu-nav ul{
+        display:flex;
+        gap: 1rem;
+    }
+    .contenedor-titulo-dibujos h1{
+        font-size: 3rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+     }
+     .contenedor-titulo-dibujos .estrella-pequeña{
+         position: absolute;
+         top:8%;
+         left: 25%;
+         height: 1.6rem;
+         width: 1.6rem;
+     }
+     .contenedor-titulo-dibujos .estrella-mediana{
+         position: absolute;
+         top: 35%;
+         right: 25%;
+         height: 1.5rem;
+         width: 1.5rem;
+     }
+     .contenedor-titulo-dibujos .estrella-grande{
+         position: absolute;
+         top: 20%;
+         left: 30%;
+         height: 3.6rem;
+         width: 3.6rem;
+     }
+     .contenedor-titulo-dibujos .rayo{
+         position: absolute;
+         top: 15%;
+         right:25%;
+         height: 4rem;
+         width: 4rem;
+     }
+     .contenedor-imagen-logo .imagen-grande{
+        position: absolute;
+        border: 1px solid black;
+        border-radius: 35%;
+        top: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 25rem;
+        width: 20rem;
+        z-index: 1;
+    }
+    .contenedor-imagen-logo .logo{
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        top: 32vh;
+        left: 70vw;
+        z-index: 4;
+    }
+    .nosotros{
+        height: 100vh;
+        display: grid;
+        justify-content: center;
+        grid-template-columns:  1fr 1fr;
+        grid-template-rows:0.2fr 1fr;
+    }
+    .contenedor-circles{
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .con-div{
+        position: relative;
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .contenedor-imagen-nosotros{
+        position: absolute;
+        top: 2%;
+        left: 20%;
+        width: 60vh;
+        height: 60vh;
+    }
+    .contenedor-imagen-nosotros img{
+        width: 55vh;
+        height: 55vh;
+    }
+
+    .texto-subtitulo-iconos{
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
 
 }
