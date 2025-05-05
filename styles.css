@@ -702,3 +702,28 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .tg{
     background-color:#fff460;
 }
+
+/* Diseño de boton de chat */
+.chat-boton {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #fff350; 
+    border: 2px solid #444;     
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.4); 
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    cursor: pointer;
+  }
+
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+
+}
