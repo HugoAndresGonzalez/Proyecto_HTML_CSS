@@ -147,7 +147,7 @@ nav ul{
     width: 4rem;
     height: 4rem;
     top: 65vh;
-    left: 22%;
+    left: 25vw;
     z-index: 4;
 }
    
@@ -170,6 +170,11 @@ nav ul{
     color: #1d5fcd;
     font-size:4rem ;
     padding-left: 12%;
+    transition-duration: 3s;
+    transition-delay: 0.5s;
+}
+.texto-subtitulo-iconos h1:hover{
+    padding-left: 60%;
 }
 .texto-subtitulo-iconos p{
     margin-top: 2%;
@@ -203,6 +208,7 @@ nav ul{
     background-color: #ffb4ce;
     border: 1px solid black;
 }
+
 .uno{
     top: 12%;
     left: 10%;
@@ -223,6 +229,17 @@ nav ul{
     margin: 5%;
     width: 62vw;
     height: 62vw;
+
+}
+.tres{
+    transition-duration: 6s;
+    transition-delay: 0.5;
+}
+.tres:hover{
+    width: 73vw;
+    height: 73vw;
+    rotate: 360deg;
+    background-color: #52dcf8;
 }
 /* Estilos seccion de Galeria */
 .galeria{
@@ -238,7 +255,15 @@ overflow-x: auto;
 grid-template-rows: 1fr 1fr;
 gap:10px;
 }
-
+.fotos-galeria{
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+}
+.fotos-galeria:hover{
+    height: 47vh;
+    width:37vw ;
+    box-shadow: 5px 6px 1px rgba(0, 170,228,4);
+}
 .contenedor-galeria img{
     height: 45vh;
     width:35vw ;
@@ -276,6 +301,12 @@ font-family: "gulfs-display";
     color:#035dff;
     width:1rem;
     height: 1rem;
+    transition-duration: 3s;
+}
+.signo:hover{
+    width:2rem;
+    height: 2rem;
+    rotate: 360deg;
 }
 .precios-horas input{
    width: 80vw;
@@ -460,10 +491,11 @@ top: 88%;
     text-align: start;
     padding: 10%;
 }
+/* Estilos seccion de Contactos */
 .Contacto{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.75fr 1fr;
+    grid-template-rows: 0.8fr 1fr;
     background-color:#ffb4ce;
     padding: 5%;
 }
@@ -480,18 +512,29 @@ top: 88%;
     transform: translateX(-50%);
     width: 35vw;
     z-index: 100;
+    transition-duration: 3s;
+    transition-delay: 0.5;
 }
   
+.novios:hover{
+    width: 15vw;
+    top: 20vw;
+}
 .exclamacion{
     position: absolute;
     width: 16vw;
     left: 40vw;
+}
+.mano-disco:hover{
+    rotate: -35deg;
 }
 .mano-disco{
     position: absolute;
     width: 14vw;
     left: 58vw;
     top: 6vw;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
 }
 .copas{
     position: absolute;
@@ -512,8 +555,14 @@ top: 88%;
     width: 10vw;
     left: 18vw;
     top: 25vw;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
 }
-
+.corazon:hover{
+    width: 13vw;
+    top: 22vw;
+    left: 10vw;
+}
 .musica{
     position: absolute;
     width: 25vw;
